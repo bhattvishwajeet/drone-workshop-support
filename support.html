@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Drone Workshop Support</title>
-<meta name="description" content="Help for Drone Workshop: build a drone from real parts, test-fly it, and learn from what happens.">
+<meta name="description" content="Help for Drone Workshop: build a drone from real parts, fly it on an outdoor adventure, take photos, and learn from what happens.">
 <style>
   :root {
     --bg: #f6f7f9;
@@ -76,7 +76,6 @@
   h2 { font-size: 1.6rem; margin: 0 0 8px; }
   h3 { font-size: 1.15rem; margin: 28px 0 6px; }
   p { margin: 0 0 14px; }
-  .muted { color: var(--muted); }
 
   figure {
     margin: 20px 0 28px; background: var(--surface); border: 1px solid var(--border);
@@ -90,9 +89,7 @@
   @media (min-width: 820px) { .pair { grid-template-columns: 1fr 1fr; } .pair figure { margin-top: 8px; } }
 
   .steps { counter-reset: step; list-style: none; padding: 0; margin: 16px 0; }
-  .steps li {
-    counter-increment: step; position: relative; padding: 0 0 14px 44px;
-  }
+  .steps li { counter-increment: step; position: relative; padding: 0 0 14px 44px; }
   .steps li::before {
     content: counter(step); position: absolute; left: 0; top: 0;
     width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff;
@@ -116,9 +113,7 @@
   details[open] summary { margin-bottom: 8px; }
   details p:last-child { margin-bottom: 0; }
 
-  .callout {
-    background: var(--accent-soft); border-radius: 12px; padding: 14px 16px; margin: 16px 0;
-  }
+  .callout { background: var(--accent-soft); border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
   a { color: var(--accent); }
   footer { padding: 48px 0 64px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--border); margin-top: 48px; }
 </style>
@@ -128,17 +123,20 @@
 <header class="wrap">
   <p class="eyebrow">Drone Workshop · Support</p>
   <h1>Build it. Fly it. Find out why.</h1>
-  <p class="lede">Drone Workshop is an engineering game for kids aged 8–12. Players build a quadcopter from real parts, take it outside for a test flight, and see how every choice changes the way it flies.</p>
+  <p class="lede">Drone Workshop is an engineering game for kids aged 8–12. Players build a quadcopter from real parts, fly it through an outdoor adventure, take photos, and see how every choice changes the way it flies.</p>
   <ul class="loop" aria-label="Game loop">
-    <li>1 · Build</li><li>2 · Test flight</li><li>3 · Watch what happens</li><li>4 · Improve</li><li>5 · Fly again</li>
+    <li>1 · Build</li><li>2 · Pick a mission</li><li>3 · Fly and explore</li><li>4 · Take photos</li><li>5 · Land and improve</li>
   </ul>
 </header>
 
 <nav class="toc" aria-label="On this page">
   <div class="wrap">
     <ul>
+      <li><a href="#start">Getting started</a></li>
       <li><a href="#build">Building</a></li>
+      <li><a href="#mission">Mission</a></li>
       <li><a href="#fly">Flying</a></li>
+      <li><a href="#photos">Photos</a></li>
       <li><a href="#experiments">Experiments</a></li>
       <li><a href="#ipad">iPad</a></li>
       <li><a href="#faq">Questions</a></li>
@@ -150,9 +148,19 @@
 
 <main class="wrap">
 
+  <section id="start">
+    <h2>Getting started</h2>
+    <p>The game opens on the home screen. Pick where to go: build in the <strong>Workshop</strong>, play a <strong>Mission</strong>, explore in <strong>Free Flight</strong>, or look at your <strong>Photos</strong>.</p>
+    <figure>
+      <a href="phone-home.jpg"><img src="phone-home.jpg" width="1400" height="644" loading="lazy"
+        alt="The home screen with four large cards: Workshop, Missions, Free Flight and Photos, under the title Drone Workshop."></a>
+      <figcaption><strong>Home screen.</strong> The line under the title tells you whether your drone is ready to fly.</figcaption>
+    </figure>
+  </section>
+
   <section id="build">
     <h2>Building your drone</h2>
-    <p>The game opens in the workshop with an empty drone frame on the workbench. Every part is a real 3D object with its own weight and job.</p>
+    <p>New players start with an empty drone frame on the workbench. Every part is a real 3D object with its own weight and job.</p>
 
     <figure>
       <a href="phone-workshop-start.jpg"><img src="phone-workshop-start.jpg" width="1400" height="644" loading="lazy"
@@ -164,13 +172,13 @@
       <li><strong>Drag a part</strong> from the parts box onto a glowing spot on the drone. When the part is close enough, it snaps into place. You can also tap a part, then tap a glowing spot.</li>
       <li><strong>Add four motors</strong> on the ends of the arms, the <strong>Brain</strong> (flight controller) in the middle, and the <strong>Battery</strong> on top.</li>
       <li><strong>Add propellers on top of the motors.</strong> Match the colours: an <span class="orange">orange</span> propeller goes where the ring glows orange, a <span class="blue">blue</span> one where it glows blue. Propellers spin in opposite directions so the drone doesn't twist around.</li>
-      <li><strong>Attach the camera</strong> at the front, then tap <strong>Test Flight</strong>.</li>
+      <li><strong>Attach the camera</strong> at the front. You need it to take photos.</li>
     </ol>
 
     <figure>
       <a href="phone-workshop-ready.jpg"><img src="phone-workshop-ready.jpg" width="1400" height="644" loading="lazy"
         alt="A fully built drone on the workbench with orange and blue propellers, a blue battery on top and the hint: Your drone is ready! Tap Test Flight."></a>
-      <figcaption><strong>Ready to fly.</strong> Every spot is filled and the Test Flight button gently pulses.</figcaption>
+      <figcaption><strong>Ready to fly.</strong> Every spot is filled. Tap <strong>Test Flight</strong> to try it outside, or <strong>Home</strong> to choose a mission.</figcaption>
     </figure>
 
     <h3>Changing parts</h3>
@@ -191,14 +199,51 @@
     </ul>
   </section>
 
+  <section id="mission">
+    <h2>Mission 1: Cliff Photographer</h2>
+    <p><em>"A visitor is waiting on the cliff. Build your drone, fly over, take a clear picture, and return safely to base."</em></p>
+    <p>Choose <strong>Missions</strong> on the home screen. The briefing checks your drone before you go. If something is missing, such as the camera, it tells you and offers a trip to the workshop. You can still fly anyway and see what happens.</p>
+
+    <figure>
+      <a href="ipad-briefing.jpg"><img src="ipad-briefing.jpg" width="1400" height="978" loading="lazy"
+        alt="The mission briefing on iPad: the Cliff Photographer story, a checklist showing motors, propellers, battery, brain and camera all ready, and Start Mission and Workshop buttons."></a>
+      <figcaption><strong>Mission briefing.</strong> A green tick means that part is ready.</figcaption>
+    </figure>
+
+    <ol class="steps">
+      <li><strong>Take off</strong> from the landing pad.</li>
+      <li><strong>Find the cliff.</strong> Follow the yellow arrow at the top of the screen and look for the bouncing yellow marker above the visitor.</li>
+      <li><strong>Take a picture.</strong> Tap <strong>Camera</strong> to look through your drone's camera, put the visitor in the middle, and tap the round shutter button.</li>
+      <li><strong>Head back home</strong> and <strong>land on the pad</strong>. A green light beam shows where it is.</li>
+    </ol>
+
+    <figure>
+      <a href="ipad-mission-cliff.jpg"><img src="ipad-mission-cliff.jpg" width="1400" height="978" loading="lazy"
+        alt="The drone flying towards a tall rock cliff above a lake. A yellow marker floats over the visitor on top. The banner says Take a picture of the visitor, with arrows showing the cliff and home distances."></a>
+      <figcaption><strong>Finding the visitor.</strong> The blue banner always shows the next goal. The arrows show which way to go and how far it is.</figcaption>
+    </figure>
+
+    <figure>
+      <a href="ipad-mission-photo.jpg"><img src="ipad-mission-photo.jpg" width="1400" height="978" loading="lazy"
+        alt="The drone camera view: viewfinder corners, a dashed centre box with the visitor in the red jacket in the middle, and a round shutter button."></a>
+      <figcaption><strong>Drone camera view.</strong> Keep the visitor inside the dashed box and tap the shutter. A photo only counts when the visitor is close enough, near the middle and not hidden behind anything. A message right after the shot says "Great shot of the visitor!" or what to fix.</figcaption>
+    </figure>
+
+    <figure>
+      <a href="ipad-mission-results.jpg"><img src="ipad-mission-results.jpg" width="1400" height="978" loading="lazy"
+        alt="The Mission Complete card on the landing pad, showing the photo of the visitor, flight time, battery left, crashes, and buttons for Fly Again, Workshop and Photos."></a>
+      <figcaption><strong>Mission complete!</strong> See your photo, how long you flew, how much battery was left and how many times you crashed.</figcaption>
+    </figure>
+  </section>
+
   <section id="fly">
     <h2>Flying</h2>
-    <p>Tap <strong>Test Flight</strong> to take exactly the drone you built outside. Nothing is added or fixed automatically.</p>
+    <p>Every flight uses exactly the drone you built. Nothing is added or fixed automatically. In <strong>Free Flight</strong> you can go anywhere: up the valley, around the cliff, over the lake and the forest.</p>
 
     <figure>
       <a href="phone-flight-hover.jpg"><img src="phone-flight-hover.jpg" width="1400" height="644" loading="lazy"
-        alt="The test flight on iPhone: the drone hovering over grass, a status card showing Flying, 99% battery and 1.5 m, two joysticks and buttons for Stop, Take off and Land."></a>
-      <figcaption><strong>Hovering at 1.5 m.</strong> The card in the top-left corner shows what the drone is doing, how much battery is left, and how high it is.</figcaption>
+        alt="Free flight on iPhone: the drone hovering above the landing pad with home base and trees behind, a status card showing Flying, battery and height, and the flight controls."></a>
+      <figcaption><strong>Hovering over the landing pad.</strong> The card in the top-left corner shows what the drone is doing, how much battery is left, and how high it is.</figcaption>
     </figure>
 
     <div class="table-wrap">
@@ -209,21 +254,44 @@
           <tr><td><strong>Take off / Land</strong></td><td>In Assisted mode, climbs to 1.5 m and hovers, or comes down gently.</td></tr>
           <tr><td><strong>Left stick</strong></td><td>Up and down: climb or descend. Left and right: turn.</td></tr>
           <tr><td><strong>Right stick</strong></td><td>Fly forward, backward and sideways.</td></tr>
-          <tr><td><strong>Assisted</strong></td><td>Best for beginners. The drone keeps itself level, holds its height and stops when you let go.</td></tr>
-          <tr><td><strong>Manual</strong></td><td>The left stick sets motor power directly. Harder, more like a real pilot.</td></tr>
-          <tr><td><strong>Reset</strong></td><td>Puts the drone back on the launch pad.</td></tr>
-          <tr><td><strong>Workshop</strong></td><td>Goes back to the workbench with your drone exactly as you left it.</td></tr>
+          <tr><td><strong>Camera / Chase</strong></td><td>Switches between looking through the drone's camera and following behind the drone.</td></tr>
+          <tr><td><strong>Shutter</strong></td><td>The round button in camera view takes a photo.</td></tr>
+          <tr><td><strong>Guide</strong></td><td>In Assisted mode, shows a big arrow pointing to where you need to go.</td></tr>
+          <tr><td><strong>Pause</strong></td><td>Resume, Restart, switch Assisted/Manual, go to the Workshop, or go Home.</td></tr>
         </tbody>
       </table>
     </div>
+
+    <p><strong>Assisted</strong> mode is best for beginners: the drone keeps itself level, holds its height and stops when you let go. <strong>Manual</strong> mode lets the left stick set motor power directly. It's harder, and more like a real pilot. The game remembers your choice.</p>
 
     <h3>Engineering Details</h3>
     <p>Tap the gauge button on the status card for the numbers behind the flight: speed, tilt, battery voltage and current, weight, thrust and where the balance point is. The four bars show how hard each motor is pushing; the white line marks what each motor needs to hover.</p>
 
     <figure>
       <a href="phone-flight-details.jpg"><img src="phone-flight-details.jpg" width="1400" height="644" loading="lazy"
-        alt="The Engineering Details panel during a flight with the big camera: 1298 g weight, 312 W power, balance point 35 mm forward, front motors at 4.1 N and back motors at 2.2 N."></a>
-      <figcaption><strong>A drone with the big camera.</strong> It weighs 1.3 kg, uses about 312 W to hover, and its balance point is 35 mm forward, so the front motors push almost twice as hard as the back ones.</figcaption>
+        alt="The Engineering Details panel during a flight with the big camera, showing weight, power, balance point, and the front motors pushing harder than the back ones."></a>
+      <figcaption><strong>A drone with the big camera.</strong> The extra weight at the front makes the front motors push much harder than the back ones, and uses more battery.</figcaption>
+    </figure>
+
+    <figure>
+      <a href="phone-pause.jpg"><img src="phone-pause.jpg" width="1400" height="644" loading="lazy"
+        alt="The pause menu with Assisted and Manual buttons and Resume, Back to pad, Workshop and Home buttons."></a>
+      <figcaption><strong>Pause menu.</strong> Switch between Assisted and Manual, start again, or go back to the workshop.</figcaption>
+    </figure>
+  </section>
+
+  <section id="photos">
+    <h2>Photos</h2>
+    <p>Photos are saved on your device. Open them from <strong>Photos</strong> on the home screen or from the mission results. Tap a photo to see it full screen; swipe to see the others. A star marks a mission photo of the visitor.</p>
+    <figure>
+      <a href="ipad-gallery.jpg"><img src="ipad-gallery.jpg" width="1400" height="978" loading="lazy"
+        alt="The Photos screen showing a photo of the visitor on the cliff with a yellow star badge."></a>
+      <figcaption><strong>Your photos.</strong> The game keeps your 60 most recent photos.</figcaption>
+    </figure>
+    <figure>
+      <a href="phone-no-camera.jpg"><img src="phone-no-camera.jpg" width="1400" height="644" loading="lazy"
+        alt="A message saying No camera on your drone, with buttons to keep flying or go to the workshop."></a>
+      <figcaption><strong>No camera?</strong> The game explains what's missing and offers a trip to the workshop. It never adds parts for you.</figcaption>
     </figure>
   </section>
 
@@ -237,36 +305,30 @@
         <tbody>
           <tr><td>Leave out one motor</td><td>The drone tips over as it tries to lift off.</td><td>One corner has no thrust, and nothing balances the turning push of the other propellers.</td></tr>
           <tr><td>No battery</td><td>Nothing happens.</td><td>Motors need electricity to spin.</td></tr>
-          <tr><td>Fit the big camera</td><td>It still flies, but the battery drains much faster.</td><td>Extra weight up front: the front motors must work harder.</td></tr>
+          <tr><td>Fit the big camera</td><td>It still flies, but the battery drains much faster. Its zoom lets you take the mission photo from further away.</td><td>Extra weight up front: the front motors must work harder.</td></tr>
           <tr><td>Put a propeller on the wrong colour</td><td>The drone can't fly steadily.</td><td>That propeller blows air up instead of down.</td></tr>
           <tr><td>Use small motors</td><td>The drone can't take off.</td><td>The motors can't push harder than the drone's weight.</td></tr>
           <tr><td>Fly until the battery runs out</td><td>The drone loses power and comes down.</td><td>No charge left means no thrust.</td></tr>
+          <tr><td>Land in the lake</td><td>Splash! The drone stops working.</td><td>Water and electronics don't mix.</td></tr>
         </tbody>
       </table>
     </div>
 
     <figure>
       <a href="phone-flight-crash.jpg"><img src="phone-flight-crash.jpg" width="1400" height="644" loading="lazy"
-        alt="A three-motor drone tipped over on the launch pad; the status card says Crashed! Propellers hit."></a>
-      <figcaption><strong>Three motors.</strong> The drone flips at take-off and its propellers hit the ground. Go back to the workshop, add the missing motor, and try again.</figcaption>
+        alt="A Crashed card explaining: Your drone lost its balance because a motor or propeller was missing, with Try Again and Workshop buttons."></a>
+      <figcaption><strong>After a crash</strong> the game explains what went wrong when it can tell from the flight, then lets you <strong>Try Again</strong> or fix the drone in the <strong>Workshop</strong>. Your drone is kept as you built it.</figcaption>
     </figure>
   </section>
 
   <section id="ipad">
     <h2>On iPad</h2>
-    <p>On iPad the parts box sits down the side and shows more about each part, the 3D view is bigger, and the joysticks are larger and placed where thumbs rest.</p>
-    <div class="pair">
-      <figure>
-        <a href="ipad-workshop.jpg"><img src="ipad-workshop.jpg" width="1400" height="978" loading="lazy"
-          alt="The iPad workshop with a side parts box listing each part's name, details and weight, and a drone missing one motor whose spot glows."></a>
-        <figcaption><strong>Workshop on iPad.</strong> A drone with one motor missing. Its empty spot glows.</figcaption>
-      </figure>
-      <figure>
-        <a href="ipad-flight.jpg"><img src="ipad-flight.jpg" width="1400" height="978" loading="lazy"
-          alt="A test flight on iPad with the Engineering Details panel open beside the hovering drone and large joysticks in the lower corners."></a>
-        <figcaption><strong>Flying on iPad,</strong> with Engineering Details open.</figcaption>
-      </figure>
-    </div>
+    <p>On iPad the parts box sits down the side and shows more about each part, the 3D view is bigger, and the joysticks are larger and placed where thumbs rest. The mission screenshots above were taken on iPad.</p>
+    <figure>
+      <a href="ipad-workshop.jpg"><img src="ipad-workshop.jpg" width="1400" height="978" loading="lazy"
+        alt="The iPad workshop with a side parts box listing each part's name, details and weight, and a drone missing one motor whose spot glows."></a>
+      <figcaption><strong>Workshop on iPad.</strong> A drone with one motor missing. Its empty spot glows.</figcaption>
+    </figure>
   </section>
 
   <section id="faq">
@@ -281,20 +343,24 @@
       <p>Usually the drone is telling you something about how it was built. Check that all four motors and propellers are fitted, that each propeller matches the colour of its ring, and that the battery and Brain are installed. Open <strong>Engineering Details</strong> during a flight to see which motor is missing or struggling.</p>
     </details>
     <details>
-      <summary>The drone crashed. How do I try again?</summary>
-      <p>Tap <strong>Reset</strong> to put it back on the launch pad, or <strong>Workshop</strong> to change parts first.</p>
+      <summary>My photo didn't count for the mission. Why?</summary>
+      <p>The message after each photo says what to fix: fly closer, put the visitor in the middle, or move so nothing is in the way. Keep the visitor inside the dashed box in camera view, about 5–10 m away.</p>
     </details>
     <details>
-      <summary>Will I lose my drone if I close the app?</summary>
-      <p>No. Your drone is saved on the device automatically and is still there next time.</p>
+      <summary>I'm lost. How do I get back?</summary>
+      <p>The green arrow at the top of the screen always points home and shows how far away it is. In Assisted mode, tap <strong>Guide</strong> for a big arrow. Near home, a green light beam marks the landing pad.</p>
+    </details>
+    <details>
+      <summary>The drone crashed. How do I try again?</summary>
+      <p>Tap <strong>Try Again</strong> to start from the landing pad. In a mission, a good photo you already took is kept. Or tap <strong>Workshop</strong> to change your drone first.</p>
+    </details>
+    <details>
+      <summary>Will I lose my drone, photos or progress if I close the app?</summary>
+      <p>No. Your drone, your photos and completed missions are saved on the device automatically. A flight that's in progress isn't saved, so the next time you open the game you start from the home screen.</p>
     </details>
     <details>
       <summary>How do I start again with an empty frame?</summary>
       <p>In the workshop, tap <strong>Menu → Start over</strong> and confirm.</p>
-    </details>
-    <details>
-      <summary>I can't see the part I'm looking for.</summary>
-      <p>Tap <strong>View</strong> to reset the camera, or drag one finger to turn the drone. The Brain sits under the battery, so take the battery off to reach it. On iPhone, tap <strong>Parts</strong> if the parts box is hidden.</p>
     </details>
     <details>
       <summary>Can I turn off the hints?</summary>
@@ -309,7 +375,7 @@
   <section id="privacy">
     <h2>Privacy</h2>
     <div class="callout">
-      <p><strong>Drone Workshop works completely offline.</strong> It has no accounts, no ads, no in-app purchases and no tracking. It doesn't collect or send any personal information. Your drone is saved only on your own device.</p>
+      <p><strong>Drone Workshop works completely offline.</strong> It has no accounts, no ads, no in-app purchases and no tracking. It doesn't collect or send any personal information. Your drone, photos and progress are saved only on your own device.</p>
     </div>
   </section>
 
